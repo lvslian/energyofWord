@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Энергия слова: «Мой зеленоглазый аруах»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9efe7;--surface:#f6f9f4;--ink:#16302a;--muted:#4c6159;--eye:#1f8a62;--gold:#b88a2c;--line:#b9c8bd}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12231f;--surface:#1a3029;--ink:#e7f0ea;--muted:#a3b8ad;--eye:#4fd1a0;--gold:#e0b34e;--line:#2f4a41;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12231f;--surface:#1a3029;--ink:#e7f0ea;--muted:#a3b8ad;--eye:#4fd1a0;--gold:#e0b34e;--line:#2f4a41;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:56px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Literata",Georgia,"Times New Roman",serif;line-height:1.7;font-size:18px}
+header,main,footer{max-width:860px;margin:0 auto;padding-left:22px;padding-right:22px}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px}
+.eyes{display:flex;gap:26px;margin-bottom:28px}
+.eyes i{width:54px;height:54px;border-radius:50%;background:radial-gradient(circle,#0b1a16 0 22%,var(--eye) 24% 62%,var(--bg) 64%);box-shadow:0 0 0 2px var(--eye),0 0 34px color-mix(in srgb,var(--eye) 55%,transparent);animation:blink 6s infinite}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.08)}}
+h1{font-size:clamp(40px,9vw,84px);line-height:1.02;margin:0 0 20px;letter-spacing:-.01em}
+.lead{font-size:clamp(19px,3vw,24px);color:var(--muted);max-width:34em;margin:0}
+.meta{margin-top:28px;font-size:15px;color:var(--muted)}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-block:1px solid var(--line);overflow-x:auto;white-space:nowrap;padding-top:env(safe-area-inset-top,0px)}
+nav a{display:inline-block;padding:12px 14px;color:var(--ink);text-decoration:none;font-size:15px}
+nav a:hover,nav a:focus-visible{color:var(--eye);outline:none;text-decoration:underline}
+section{padding:64px 0 8px}
+h2{font-size:clamp(26px,5vw,38px);margin:0 0 18px;line-height:1.15}
+h3{margin:0 0 6px;font-size:22px}
+p{max-width:40em;margin:0 0 16px}
+.q{border-left:4px solid var(--gold);padding:6px 0 6px 18px;font-style:italic;font-size:22px;max-width:30em;margin:20px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card,.panel{background:var(--surface);border:1px solid var(--line);padding:20px 22px;border-radius:6px}
+.card{border-top:4px solid var(--eye)}
+.card p,.panel p{margin:0}
+.steps{list-style:none;padding:0;max-width:40em;border-left:2px solid var(--eye);margin-left:8px}
+.steps li{padding:0 0 18px 20px}
+.steps b{display:block}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.tabs button{font:inherit;font-size:16px;padding:8px 16px;border:1.5px solid var(--eye);background:transparent;color:var(--ink);border-radius:999px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--eye);color:#06241a}
+.tabs button:focus-visible,button.th:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.panel{max-width:40em}
+.fill{border:2px dashed var(--gold);padding:14px 18px;border-radius:6px;background:var(--surface);color:var(--muted);max-width:40em}
+ul{max-width:40em;padding-left:22px}
+li{margin-bottom:8px}
+footer{padding-top:56px;padding-bottom:calc(72px + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:15px}
+footer a{color:var(--eye)}
+button.th{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));font:inherit;font-size:14px;padding:8px 14px;border-radius:999px;border:1.5px solid var(--eye);background:var(--surface);color:var(--ink);cursor:pointer}
+.chat{max-width:40em;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px}
+.log{max-height:340px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.m{padding:10px 14px;border-radius:12px;max-width:88%;font-size:16px;line-height:1.55}
+.m.b{background:color-mix(in srgb,var(--eye) 16%,var(--surface));align-self:flex-start;border:1px solid var(--line)}
+.m.u{background:var(--eye);color:#06241a;align-self:flex-end}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chips button,.send button{font:inherit;font-size:14px;padding:6px 12px;border:1.5px solid var(--eye);background:transparent;color:var(--ink);border-radius:999px;cursor:pointer}
+.send{display:flex;gap:8px}
+.send input{flex:1;min-width:0;font:inherit;font-size:16px;padding:9px 12px;border:1.5px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.send button{background:var(--eye);color:#06241a;font-size:16px}
+.chips button:focus-visible,.send button:focus-visible,.send input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.eyes i{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="eyes" aria-hidden="true"><i></i><i></i></div>
+  <h1>Энергия слова</h1>
+  <p class="lead">Как слово хранит память и определяет, какой будет культура завтра. По рассказу Светланы Назаровой «Мой зеленоглазый аруах».</p>
+  <p class="meta">Проект «Энергия будущего · энергия слова» · [Имя Фамилия, класс, школа]</p>
+</header>
+
+<nav aria-label="Разделы"><div style="max-width:860px;margin:0 auto;padding:0 8px">
+  <a href="#question">Вопрос</a><a href="#story">Рассказ</a><a href="#heroes">Герои</a><a href="#word">Слово в рассказе</a><a href="#culture">Слово в культуре</a><a href="#chat">Спроси про рассказ</a><a href="#conclusion">Вывод</a><a href="#sources">Источники</a>
+</div></nav>
+
+<main>
+<section id="question">
+  <h2>Проблемный вопрос</h2>
+  <p class="q">Может ли слово сохранить культуру или разрушить её?</p>
+  <p><b>Гипотеза.</b> Слово несёт энергию, которая передаётся от поколения к поколению. Оно хранит память, ценности и идентичность, поэтому от слов, которые мы выбираем сегодня, зависит культура завтра.</p>
+  <p><b>Цель.</b> Показать, какое влияние слово оказывает на будущее культуры, на примере рассказа о бабушке, которая стала аруахом.</p>
+</section>
+
+<section id="story">
+  <h2>О чём рассказ</h2>
+  <p>Это лирический рассказ-воспоминание. Молодой человек по имени Мади вспоминает свою бабушку, аже Мурселю. Она воспитала его, а после смерти стала для него духовным покровителем.</p>
+  <ol class="steps">
+    <li><b>Детство.</b>Мади помнит бабушку даже раньше, чем мать. У неё редкие зелёные глаза, и дедушка ласково зовёт её «степной рысью».</li>
+    <li><b>Уклад семьи.</b>Бабушка и дедушка учат внука доброте, гостеприимству и народной мудрости. В доме царят уют и уважение.</li>
+    <li><b>Ошибка юности.</b>В суете дел Мади забывает о стариках. Уходя в армию, он не заезжает проститься.</li>
+    <li><b>Утрата и прозрение.</b>Бабушки не стало, пока он служил. Мади мучается виной, но приходит к мысли, что теперь у него прибавился ещё один аруах, дух-хранитель.</li>
+  </ol>
+  <p><b>Главная мысль:</b> родных нужно ценить, пока они живы, а любовь и связь поколений не исчезают со смертью и становятся вечной памятью и поддержкой.</p>
+</section>
+
+<section id="heroes">
+  <h2>Герои</h2>
+  <div class="grid">
+    <div class="card"><h3>Аже Мурселя</h3><p>Центральный светлый образ: добрая, терпеливая и мудрая. Заменила Мади мать, передала ценности без строгих нравоучений. Хранит традиции и гостеприимство. После смерти становится аруахом.</p></div>
+    <div class="card"><h3>Мади</h3><p>Рассказчик. В детстве чуткий и привязанный к дому, в юности беспечный и эгоцентричный. Узнав о смерти бабушки, переживает раскаяние и взрослеет.</p></div>
+    <div class="card"><h3>Ата</h3><p>Дедушка. Любящий супруг и наставник. Его нежные прозвища и добрый юмор показывают пример семейной любви и уважения.</p></div>
+  </div>
+</section>
+
+<section id="word">
+  <h2>Слово в рассказе</h2>
+  <div class="grid">
+    <div class="card"><h3>Слово, которое любит</h3><p>Дедушка называет жену «степной рысью». Одним прозвищем он передаёт восхищение её силой, красотой и проницательностью.</p></div>
+    <div class="card"><h3>Слово, которое воспитывает</h3><p>Бабушка прививает ценности без строгих нравоучений. Её уроки живут в доброте и гостеприимстве, которые Мади выносит из дома.</p></div>
+    <div class="card"><h3>Слово, которое не сказано</h3><p>Мади не простился и не поблагодарил бабушку при жизни. Эта пустота и становится его болью. Несказанное слово тоже имеет силу.</p></div>
+    <div class="card"><h3>Слово-память</h3><p>Аруах живёт, пока о нём помнят и рассказывают. Рассказ Мади и есть то слово, которое хранит бабушку и передаёт её дальше.</p></div>
+  </div>
+</section>
+
+<section id="culture">
+  <h2>Слово в культуре</h2>
+  <p>В казахской традиции слово считается действием. Выбери форму слова и посмотри, как она работает.</p>
+  <div class="tabs" role="tablist" aria-label="Формы слова">
+    <button role="tab" aria-selected="true" data-i="0">Аруах</button>
+    <button role="tab" aria-selected="false" data-i="1">Бата</button>
+    <button role="tab" aria-selected="false" data-i="2">Қарғыс</button>
+    <button role="tab" aria-selected="false" data-i="3">Мақал-мәтел</button>
+    <button role="tab" aria-selected="false" data-i="4">Жыр</button>
+  </div>
+  <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+</section>
+
+<section id="chat">
+  <h2>Спроси про рассказ</h2>
+  <p>Бот отвечает только по материалам этого проекта. Выбери вопрос или напиши свой.</p>
+  <div class="chat">
+    <div class="log" id="log" role="log" aria-live="polite"></div>
+    <div class="chips" id="chips"></div>
+    <form class="send" id="f"><input id="in" type="text" placeholder="Например: кто такая аже Мурселя?" aria-label="Твой вопрос" autocomplete="off"><button type="submit">Спросить</button></form>
+  </div>
+</section>
+
+<section id="conclusion">
+  <h2>Вывод</h2>
+  <p>Рассказ подтверждает гипотезу. Слова дедушки и бабушки формируют характер Мади, а слово, которое он не успел сказать, остаётся с ним навсегда. Память о бабушке не исчезает со смертью, потому что её передаёт рассказ. Так же работает культура: она живёт, пока её хранят в словах и передают следующему поколению.</p>
+  <p>Поэтому ответственность за слово лежит на каждом. Добрые слова, сказанные вовремя, становятся будущей памятью. Слова, отложенные на потом, могут остаться несказанными.</p>
+</section>
+
+<section id="sources">
+  <h2>Источники</h2>
+  <ul>
+    <li>С.Н. Назарова. «Мой зеленоглазый аруах» (текст рассказа).</li>
+    <li><a href="https://ust.kz/word/snazarova_moi_zelenoglazyi_aryah-267422.html">ust.kz: «Мой зеленоглазый аруах»</a></li>
+    <li><a href="https://magazines.gorky.media/neva/2015/12/rasskazy-v-sovremennoj-proze-kazahstana-kritika-i-aktualizacziya-zhanra.html">«Нева», 2015, № 12: рассказы в современной прозе Казахстана</a></li>
+    <li><a href="https://znanija.com/task/43652303">znanija.com: разбор рассказа</a></li>
+  </ul>
+</section>
+</main>
+
+<footer>Проект «Энергия слова» · [год]</footer>
+<button class="th" id="th" type="button">Тема</button>
+
+<script>
+var D=[
+["Аруах","Дух предков в казахской традиции. Его почитают и вспоминают, а память о нём передаётся словом: рассказом, именем, обращением. В рассказе бабушка становится аруахом для внука."],
+["Бата","Благословение. Слово, сказанное старшим, считается поддержкой на путь. Это слово, которое создаёт будущее."],
+["Қарғыс","Проклятие. Люди верят, что тяжёлое слово может навредить. Это слово, которое разрушает и учит осторожности."],
+["Мақал-мәтел","Пословицы и поговорки. В одной фразе хранится опыт многих поколений. Так культура передаёт ценности без длинных объяснений."],
+["Жыр","Песня-сказание. Устная память народа: события, герои и ценности дошли до нас голосом, а не книгой."]];
+var tabs=document.querySelectorAll('.tabs button'),p=document.getElementById('panel');
+function show(i){tabs.forEach(function(b,k){b.setAttribute('aria-selected',k==i)});p.innerHTML='<h3></h3><p></p>';p.firstChild.textContent=D[i][0];p.lastChild.textContent=D[i][1]}
+tabs.forEach(function(b){b.addEventListener('click',function(){show(+b.dataset.i)})});show(0);
+var K=[
+{q:"О чём рассказ?",k:["о чем","сюжет","рассказ","происход","содержан","произведен"],a:"Это лирический рассказ-воспоминание. Молодой человек Мади вспоминает свою бабушку, аже Мурселю, которая воспитала его. Уходя в армию, он не простился со стариками, а когда бабушки не стало, понял свою вину. В конце он осознаёт, что у него прибавился ещё один аруах, дух-хранитель."},
+{q:"Кто такая аже Мурселя?",k:["мурсел","бабушк","аже","зелен","глаз","рысь"],a:"Аже Мурселя, бабушка Мади, это центральный светлый образ рассказа. У неё редкие ярко-зелёные глаза, и дедушка ласково называл её «степной рысью». Она добрая, терпеливая и мудрая, заменила Мади мать и привила ему ценности без строгих нравоучений. После смерти она становится его аруахом."},
+{q:"Что такое аруах?",k:["аруах","аруаха","дух","предк"],a:"Аруах это дух предка-покровителя в казахской традиции. В рассказе бабушка после смерти становится аруахом для Мади: её зелёные глаза продолжают оберегать его. Память об аруахе живёт, пока о нём рассказывают."},
+{q:"Почему Мади не простился?",k:["простил","прощ","арми","служб","почему","ошибк","вин"],a:"Повзрослев, Мади в суете собственных дел забыл о стариках. Уходя служить в армию, он так и не заехал проститься с бабушкой и дедушкой. Бабушки не стало, пока он служил, и герой мучается виной."},
+{q:"В чём главная мысль?",k:["главн","мысл","идея","вывод","смысл","мораль","учит"],a:"Родных нужно ценить и проявлять внимание к ним при жизни, пока не стало слишком поздно. Любовь и духовная связь между поколениями не исчезают со смертью и становятся вечной памятью и поддержкой предков."},
+{q:"Кто такой Мади?",k:["мади","рассказчик","внук","герой"],a:"Мади это рассказчик, через его воспоминания мы видим всю историю. В детстве он любознательный и чуткий, в юности беспечный и эгоцентричный. Узнав о смерти бабушки, он переживает раскаяние и по-настоящему взрослеет."},
+{q:"Кто такой дедушка?",k:["дед"," ата","супруг","муж"],a:"Дедушка (ата) показывает пример семейной любви и уважения. У него нежное отношение к бабушке, добрый юмор и ласковые прозвища, например «степная рысь». Вместе с бабушкой он создаёт для Мади идеальный мир детства."},
+{q:"Как связаны слово и рассказ?",k:["слов","энерги","речь","память","связ"],a:"В рассказе слово работает по-разному. Ласковое прозвище дедушки передаёт любовь. Бабушка воспитывает без нравоучений, и её уроки остаются в Мади. Не сказанное при прощании слово становится его болью. А сам рассказ Мади хранит память о бабушке и передаёт её дальше."},
+{q:"Что такое бата и қарғыс?",k:["бата","қарғыс","карғыс","каргыс","благослов","проклят","мақал","макал","пословиц","жыр"],a:"Бата это благословение, слово старшего, которое поддерживает на пути. Қарғыс это проклятие, слово, которое может навредить. Мақал-мәтел хранит опыт поколений в одной фразе, а жыр это песня-сказание, устная память народа. Подробнее в разделе «Слово в культуре»."},
+{q:"Кто автор?",k:["автор","назаров","светлан","написал"],a:"Автор рассказа Светлана Назарова."}];
+var log=document.getElementById('log'),inp=document.getElementById('in'),chips=document.getElementById('chips');
+function add(t,c){var d=document.createElement('div');d.className='m '+c;d.textContent=t;log.appendChild(d);log.scrollTop=log.scrollHeight}
+function norm(t){return t.toLowerCase().replace(/ё/g,'е')}
+function ans(t){var n=norm(t),best=null,sc=0;K.forEach(function(x){var c=0;x.k.forEach(function(w){if(n.indexOf(norm(w))>-1)c++});if(c>sc){sc=c;best=x}});
+return best?best.a:"Я отвечаю только по материалам проекта. Попробуй спросить про сюжет, аже Мурселю, аруаха, Мади, дедушку, главную мысль или слово в рассказе."}
+function ask(t){t=t.trim();if(!t)return;add(t,'u');setTimeout(function(){add(ans(t),'b')},250)}
+K.forEach(function(x){var b=document.createElement('button');b.type='button';b.textContent=x.q;b.addEventListener('click',function(){ask(x.q)});chips.appendChild(b)});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();ask(inp.value);inp.value=''});
+add("Привет! Я отвечу на вопросы по рассказу «Мой зеленоглазый аруах». Выбери вопрос ниже или напиши свой.",'b');
+document.getElementById('th').addEventListener('click',function(){var r=document.documentElement,d=r.getAttribute('data-theme')=='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);r.setAttribute('data-theme',d?'light':'dark')});
+</script>
+</body>
+</html>
